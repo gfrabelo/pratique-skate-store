@@ -1,0 +1,82 @@
+@import "_patterns.scss";
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;   
+    width: 60%;
+    margin: 3vw auto;
+    .product-box {
+        display: block;
+        width: 17vw;
+        height: 19vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $white;
+        margin: .8vw;
+        padding: .8vw 0;
+        box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.8);
+        border-radius: 1vw;
+        position: relative;
+        transition: .6s ease all;
+        .blur-active {
+            opacity: .4;
+            transform: scale(.4);
+        }
+        &__img {
+            width: 85%;
+            height: 60%;
+            margin: auto;
+            position: relative;
+            transition: .3s ease all;
+            transition-delay: .6s;
+        }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5vw 1.2vw;
+            font-size: 1.058vw;
+            .title {
+                width: 85%;
+            }
+            .price {
+                color: $price;
+                font-weight: bold;
+            }
+        }
+        &__button {
+            width: 100%;
+            position: absolute;
+            bottom: .03vw;
+            font-size: 1.3vw;
+            background-color: $price;
+            color: #ffffff;
+            padding: 0.5vw 0;
+            cursor: pointer;
+            border: none;
+        }
+    }
+    .product-box:hover {
+        transform: scale(1.14);
+        box-shadow: 0 0 13px 13px rgba(0, 0, 0, 0.6);
+    }
+    @media #{$mediamobile} {
+        grid-template-columns: 1fr;
+        width: 85%;
+        .product-box {
+            width: 80vw;
+            height: 80vw;
+            margin: 5vw auto;
+            padding: 5vw 0;
+            &__info {
+                padding: 3vw 5vw;
+                font-size: 4.46vw;
+                display: block;
+            }
+            &__button {
+                font-size: 5vw;
+                padding: 2vw 0;
+            }
+        }
+    }
+}
+
