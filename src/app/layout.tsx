@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pratique Skate Store",
-  description: "Pratique Skate Store - Ecommerce",
+  description: "Pratique Skate Store - Ecommerce teste",
 };
 
 export default function RootLayout({
