@@ -2,7 +2,6 @@ $mobile: '1023px';
 $mediamobile: '(max-width:' + $mobile + ')';
 
 $bg: #0A2647;
-$cart-bg: #144272;
 $cart: #2C74B3;
 $text:  #2C2C2C;
 $white: #fff;
@@ -13,6 +12,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-color: $bg;
+    background: rgb(2,0,36);
+    background: linear-gradient(170deg, rgba(2,0,36,1) 0%, rgba(10,38,71,1) 55%, rgba(0,212,255,1) 100%);
+    min-height: 100vh;
     box-sizing: border-box;
 }
