@@ -53,10 +53,22 @@
             padding: 0.5vw 0;
             cursor: pointer;
             border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon-bt {
+                width: 1.6vw;
+                padding-left: .6vw;
+                transition: .4s ease all;
+            }
+        }
+        &__button:hover .icon-bt {
+            transform: rotate(-15deg);
+            padding-left: 1vw;
         }
     }
     .product-box:hover {
-        transform: scale(1.14);
+        transform: scale(1.11);
         box-shadow: 0 0 13px 13px rgba(0, 0, 0, 0.6);
     }
     @media #{$mediamobile} {
