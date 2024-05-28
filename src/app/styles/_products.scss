@@ -58,13 +58,21 @@
             align-items: center;
             .icon-bt {
                 width: 1.6vw;
-                padding-left: .4vw;
+                position: relative;
+                left: .4vw;
                 transition: .4s ease all;
+                @media #{$mediamobile} {
+                    width: 5.4vw;
+                    left: 2vw;
+                }
             }
         }
         &__button:hover .icon-bt {
             transform: rotate(-15deg);
-            padding-left: 1vw;
+            left: 1vw;
+            @media #{$mediamobile} {
+                left: 4vw;
+            }
         }
     }
     .product-box:hover {
