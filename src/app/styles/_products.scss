@@ -68,11 +68,7 @@
             }
         }
         &__button:hover .icon-bt {
-            transform: rotate(-15deg);
-            left: 1vw;
-            @media #{$mediamobile} {
-                left: 4vw;
-            }
+            transform: rotate(-15deg) translateX(.4vw);
         }
     }
     .product-box:hover {
