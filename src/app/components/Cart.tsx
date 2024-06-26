@@ -10,8 +10,6 @@ export default function Cart() {
         return acc + item.price! * item.quantity!;
     }, 0);
 
-    
-
     return (
         <div className="cart-modal" onClick={() => useStore.toggleCart()}>
             <div className="cart-modal__container" onClick={(e) => e.stopPropagation()}>
