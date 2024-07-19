@@ -9,3 +9,19 @@ Um ecommerce dedicado à venda de roupas e peças esportivas para skatistas. Aqu
 - Stripe: O Stripe oferece uma solução completa e segura para pagamentos online. Além disso, possui uma API própria, permitindo uma integração rápida e personalizável dos produtos na aplicação.
 
 - Sass: O Sass é um pré-processador de CSS que adiciona recursos poderosos ao estilo, como variáveis, mixins e funções, facilitando a criação de estilos mais dinâmicos e reutilizáveis.
+
+## Executando o código localmente
+
+Você precisa ter Node.js / NPM instalado na sua máquina.
+
+1. Instalando as dependências do projeto:
+
+```
+npm install
+```
+
+2. Execute o projeto:
+
+```
+npm run dev
+```
